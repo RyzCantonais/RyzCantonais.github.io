@@ -2676,6 +2676,53 @@ input, select, textarea {
 			transform: scale(1.05);
 		}
 
+/* Ajout d'une classe pour le contenu du CV */
+.cv-content {
+    max-width: 60%; /* Ajustez la largeur selon vos besoins */
+}
+
+/* Mise en page pour les éléments dans la section séparée */
+.split-acceuil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Mise en page pour l'image */
+.image-200.left {
+    margin-right: 2rem;
+    max-width: 40%;
+}
+
+.image-200.left img {
+    width: 100%;
+}
+
+/* Mise en page pour le contenu du CV */
+.cv-content.right {
+    max-width: 60%;
+}
+
+.actions {
+    margin: 0;
+}
+
+/* Réglages pour les écrans plus petits */
+@media screen and (max-width: 736px) {
+    .split {
+        flex-direction: column;
+    }
+
+    .image-200.left,
+    .cv-content.right {
+        max-width: 100%;
+    }
+
+    .image-200.left {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+}
 /* Actions */
 
 	ul.actions {
